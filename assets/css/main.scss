@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.bg {
+  background-image: url('/img/gradient_bg.png'), url('/img/code_bg.png');
+  background-position: top left, center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 160px;
+  padding: 20px;
+  background: linear-gradient(to bottom, rgba(16, 15, 15, 0.3), rgba(27, 26, 26, 0.2));
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: #E3BDBD;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Electrolize";
+}
+
+.card-subtitle {
+  color: rgb(238, 231, 231);
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Electrolize";
+}
+
+.card-body {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, #E3BDBD, #E3BDBD, rgba(0, 0, 0, 0));
+  margin: 20px 0;
+}

@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E3BDBD;
+}
+
+.hello {
+  padding-top: 30px;
+  padding-left: 50px;
+  color: #E3BDBD;
+  font-size: xxx-large;
+  position: relative;
+  font-family: Electrolize;
+}
+
+.container {
+  overflow: hidden;
+  height: auto;
+  max-width: 100%;
+  max-height: 1%;
+  margin-top: 30px;
+  padding-top: 0em;
+  padding-right: 0em;
+  padding-bottom: 0em;
+  flex: 1;
+  background-color: #3a3f45;
+  display: flex;
+}
+
+#menu {
+  flex: 0 0 0px;
+  width: 300px;
+  height: 100%;
+  color: #ffffff;
+  position: relative;
+  background-color: #3a3f45;
+  padding: 20px;
+  padding-right: 55px;
+  margin-top: 1em;
+  float: left;
+  z-index: 4;
+}
+
+#menu::after {
+  content: "";
+  position: absolute;
+  top: 120%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  background-image: url('/img/profile.png');
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+}
+
+.name {
+  position: relative;
+  padding-left: 0ch;
+  padding-top: 0em;
+  z-index: 3;
+  color: #E3BDBD;
+  font-size: x-large;
+  font-family: "Electrolize";
+  text-shadow: 3px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Adjust the shadow properties as needed */
+}
+
+#column {
+  background-color: #E3BDBD;
+  flex: 1;
+  min-width: 400px;
+  position: relative;
+  margin-top: 0em;
+  z-index: 1;
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.years {
+  width: 300px;
+  height: 200px;
+  margin-top: 100px;
+  margin: 0 auto;
+  position: absolute;
+  border: 1px solid #000;
+  background-color: transparent;
+  z-index: 3;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  /* Add any additional styling for the icons */
+}
+
+.content-bg {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/code_bg.png');
+  opacity: 0.19;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.content {
+  background-image: url('/img/gradient_bg.png');
+  background-size: cover;
+  padding: 20px;
+  color: #ffffff;
+  opacity: 1;
+  padding-left: 110px;
+  padding-top: 20px;
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 160px;
+  padding: 20px;
+  background: linear-gradient(to bottom, rgba(13, 13, 13, 0.9), rgba(190, 181, 181, 0.5));
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: #E3BDBD;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Electrolize";
+}
+
+.card-subtitle {
+  color: rgb(238, 231, 231);
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Electrolize";
+}
+
+.card-body {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  margin: 20px 0;
+}
